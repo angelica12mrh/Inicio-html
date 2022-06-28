@@ -1,0 +1,129 @@
+Listas y menús
+Hay elementos que permiten crear texto con varios formatos de listado: Estos pueden ser ordenados <OL> (se refiere a numerados, no ordenados por algun criterio), desordenados <UL> (no numerados), directorios <DIR>, menu <MENU> y listados de definición <DL>. Veamos comó es la sintaxis básica y apariencia de estos elementos, a partir de los cuales, pueden hacerse combinaciones muy complejas mediante anidamientos de unos con otros, hasta conseguir prácticamente cualquier presentación deseada:
+Esto es una lista ordenada (numerada):
+
+Primera linea
+Segunda linea
+Se escribe:
+<OL>
+<LI>Primera linea
+<LI>Segunda linea
+</OL>
+Fíjate en que los elementos <LI> no tienen cierre. Terminan cuando aparece otro igual o se cierra la lista.
+Esto es una lista desordenada ( no numerada):
+Primera linea
+segunda linea
+Se escribe:
+<UL>
+<LI>Primera linea
+<LI>Segunda linea
+</UL>
+En este caso los números han sido sustituidos por unos puntos gruesos. Esa es la apariencia por defecto; se puede cambiar usando el atributo TYPE con tres valores (el valor por defecto es DISC). Con el valor CIRCLE se verá:
+Primera linea
+segunda linea
+Se escribe:
+<UL TYPE=CIRCLE>
+<LI>Primera linea
+<LI>Segunda linea
+</UL>
+También puede usarse el valor SQUARE. Así:
+
+Primera linea
+segunda linea
+Se escribe:
+<UL TYPE=SQUARE>
+<LI>Primera linea
+<LI>Segunda linea
+</UL>
+Las listas ordenadas no sólo se pueden ordenar con números. También se pueden utilizar letras y numeración romana tanto en mayúsculas como minúsculas. Para esto se utiliza el atributo TYPE del elemento <OL> con los siguientes valores: TYPE=1 (por defecto) para números, TYPE=A para letras mayúsculas, TYPE=a para letras minúsculas, TYPE=I para numeración romana en mayúsculas y TYPE=i para numeración romana en minúsculas.
+Esto es una lista ordenada con letras mayúsculas:
+
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+Se escribe:
+<OL TYPE=A>
+<LI>Primera linea
+<LI>Segunda linea
+<LI>Tercera linea
+<LI>Cuarta linea
+</OL>
+Esto es una lista ordenada con letras minúsculas:
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+Se escribe:
+<OL TYPE=a>
+<LI>Primera linea
+<LI>Segunda linea
+<LI>Tercera linea
+<LI>Cuarta linea
+</OL>
+Esto es una lista ordenada con numeración romana en mayúsculas:
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+Se escribe:
+<OL TYPE=I>
+<LI>Primera linea
+<LI>Segunda linea
+<LI>Tercera linea
+<LI>Cuarta linea
+</OL>
+Esto es una lista ordenada con numeración romana en minúsculas:
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+Se escribe:
+<OL TYPE=i>
+<LI>Primera linea
+<LI>Segunda linea
+<LI>Tercera linea
+<LI>Cuarta linea
+</OL>
+En algunos casos puede interesarnos que la lista no comience por el número 1 (por ejemplo si es una lista que continua en otra página). Se puede conseguir con el atributo START combinado con TYPE.
+Esto es una lista ordenada con letras mayúsculas y que comienza por la E:
+
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+Se escribe:
+<OL TYPE=A START=5>
+<LI>Primera linea
+<LI>Segunda linea
+<LI>Tercera linea
+<LI>Cuarta linea
+</OL>
+El número que pones en el atributo START indica en que número o letra comenzará la lista. la E es la quinta letra.
+Esto es un menú:
+Primera linea
+Segunda linea
+Se escribe:
+<MENU>
+<LI>Primera linea
+<LI>Segunda linea
+</MENU>
+La diferencia entre un menú y una lista desordenada, es que las líneas en la lista desordenada comienzan en el margen izquierdo y las del menú unas posiciones más a la derecha (aunque eso depende del visualizador, con Netscape se ven igual).
+Esto es un directorio:
+Primera linea
+Segunda linea
+Se escribe:
+<DIR>
+<LI>Primera linea
+<LI>Segunda linea
+</DIR>
+Ocurre lo mismo que con el menú, con Netscape no se aprecia diferencia.
+Esto es una lista de definicion:
+Primera linea
+Segunda linea
+Se escribe:
+<DL>
+<DT>Primera linea
+<DD>Segunda linea
+</DL>
+Fíjate que ahora en lugar del elemento <LI> se utiliza <DT> y <DD>, y como tipo <DL>. Estos tres nuevos elementos también se pueden usar con cualquiera de los anteriores tipos de lista, alterando por completo su apariencia. Para hacerse una idea de la variedad de aspectos que se pueden conseguir, lo mejor es ver la página de ejemplos de listados.
