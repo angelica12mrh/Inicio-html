@@ -1,0 +1,23 @@
+html{
+background-color: cornflowerblue;    (color del fondo de pantalla)
+}
+h1{
+    background-color: chartreuse;   (color del fondo del cuadro)
+    color:lightpink;     (color de letra)
+    border-radius: 0px;      
+    padding: 10px;
+    text-align: center;           (alineacion de la pagina)
+}
+h3{
+    background-color: blueviolet;       
+    color:lightpink;
+    border-radius: 0px;          (si el borde es redondeado) 
+    padding: 10px;     (ancho)
+    text-align: center;
+}
+
+body{
+    background-color: brown;
+    font-family: 'Times New Roman', Times, serif;  (tipo de letra o tipografia)
+    text-align: center;
+}

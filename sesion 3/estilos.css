@@ -1,0 +1,29 @@
+html{
+background-color: rgb(192, 250, 197);
+}
+h1{
+    background-color: rgb(216, 222, 250);
+    color:rgba(25, 129, 248, 0.397);
+    border-radius: 500px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', Arial Narrow, 'Arial, sans-serif';
+}
+
+h2{
+    background-color: rgb(216, 222, 250);
+    color:rgba(25, 129, 248, 0.397);
+    border-radius: 500px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+P{
+    background-color:  rgb(253, 209, 235);
+    font-family: Franklin Gothic Medium, 'Arial Narrow', 'Arial, sans-serif';
+    border-radius: 5px;
+    text-align: left;
+    color:rgba(7, 26, 46, 0.829) ;
+    text-align: center;
+}

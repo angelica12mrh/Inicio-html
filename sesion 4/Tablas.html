@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesion 4</title>
+</head>
+<body>
+    <table border="5">    (borde del cuadro)
+        <tr>      (creacion de fila)
+            <th colspan="100">     (tamaño de la tabla o encabezados, )
+                ...   (texto)
+            </th>
+        </tr>
+            <th colspan="100">     
+                ...   (texto)
+            </th>
+        <tr>
+
+        </tr>
+        <td>    (creacion de columnas)
+            
+        </td>
+        <td class="even" colspam="2" rowspan="2">    (combinar celdas)   (rowspan:fila  y colspan:columna)
+            0
+        </td>
+    </table>
+</body>
+</html>
+
+Estructura de una tabla (<table>)<table>
+HTML Living Standard Mozilla Developer Network
+Una tabla HTML (<table>) es un conjunto de celdas (<td> o <th>) organizadas en filas (<tr>) que a su vez se organizan en grupos de filas (<thead>, <tbody> o <tfoot>). Además, la tabla puede tener una leyenda (<caption>) y hacer referencia a las columnas (<col> y <colspan>).
+
+<table>
+    <caption>...</caption>
+    <tbody>
+        <tr>
+            <td>...</td>
+            <th>...</th>
+        </tr>
+    </tbody>
+</table>
+
+3. Tablas irregulares
+Cada celda de una tabla puede contar con dos parámetros, para que la celda se extienda más allá de lo normal:
+
+colspan: hace que la celda se extienda hacia la derecha, tantas celdas como se indique en su valor.
+rowspan: la celda se extenderá hacia abajo, tantas filas como se indique.
+Veámoslo con un ejemplo sencillo. La tabla de la imagen es completamente regular.
+
+<table width="50%" border="1" >
+  <tr style="background-color: rgb(102, 255, 153);">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>Tabla regular
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+
+Hemos añadido el color verde para que se vea mejor el efecto con el código style="background-color: rgb(102, 255, 153);".
+ Si quisieramos que sólo una celda cambiara de color se lo pondríamos a la etiqueta <td> de la celda. Otra formato para definir el color sería style="background-color: red;".
+
+La tabla tiene cuatro columnas, así que, para que la primera fila se componga de una sola celda,
+ debemos indicarle que ésta va a superponerse sobre las otras cuatro. Pasaríamos de una primera fila con esta apariencia:
+
+ <tr style="background-color: rgb(102, 255, 153);">
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ 
+A esta otra y el
+
+ <tr style="background-color: rgb(102, 255, 153);">
+  <td colspan="4">&nbsp;</td>
+ </tr>
+
+ https://www.htmlquick.com/es/tutorials/tables.html
