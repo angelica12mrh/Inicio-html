@@ -1,0 +1,137 @@
+https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+https://www.google.com/search?q=flex-direction&sxsrf=ALiCzsY4CWwc-7nU7TslJDUYQivTOGnXYA:1657155593828&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjruIfUyeX4AhWnmIQIHTtqClsQ_AUoAXoECAEQAw&biw=681&bih=615&dpr=1
+
+<cajas flexibles. flexbox
+El diseño CSS Flexbox es un módulo de CSS que define un 
+modelo de caja, optimizado para el diseño de interfaces
+ de usuario. En el diseño flex, los nodos hijo se pueden 
+ distribuir en dirección vertical u horizontal y se pueden 
+ "flexibilizar" sus tamaños, bien sea rellenando el espacio
+  disponible o encogiéndose para evitar salirse del contorno
+   del nodo padre. 
+
+
+<flex-direction>
+    especifica cómo colocar los objetos flexibles en el
+     contenedor flexible definiendo el eje principal y 
+     la dirección (normal o al revés).
+
+<flex-direction: row;>  /* La dirección del texto se presenta en una línea */
+<flex-direction: row-reverse;>  /* Como <row>, pero al revés */
+<flex-direction: column;>  /* La dirección en la que se apilas las líneas de texto */
+<flex-direction: column-reverse;>  /* Como <column>, pero al revés *
+
+
+<justify-content>  
+    define cómo el navegador distribuye el espacio entre y 
+    alrededor de los items flex, a lo largo del eje principal
+     de su contenedor.
+
+El alineamiento se produce luego de que las longitudes 
+y márgenes automáticos son aplicados, lo que significa que, 
+si existe al menos un elemento flexible con flex-grow 
+diferente a 0, no tendrá efecto ya que no habrá espacio
+ disponible.
+
+/* Alinear items flex desde el comienzo */
+<justify-content: flex-start;>
+
+/* Alinear items desde el final */
+<justify-content: flex-end;>
+
+/* Alinear items en el centro */
+<justify-content: center;>
+
+/* Distribuir items uniformemente El primer item al inicio, el último al final */
+<justify-content: space-between;>
+
+/* Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor */
+<justify-content: space-around;>
+
+/* Valores globales */
+<justify-content: inherit;>
+<justify-content: initial;>
+<justify-content: unset;>
+
+
+<align-items>
+    indica la alineación de un elemento dentro del bloque que lo contiene. 
+    En Flexbox controla la alineación de los elementos del 
+    Cross Axis (en-US), en Grid Layout controla la alineación 
+    de los elementos en el eje Block dentro de su área grid.
+
+/* Palabras Clave Basicas */
+<align-items: normal;>
+<align-items: stretch;>
+
+/* Alineamiento posicional */
+/* align-items no considera los valores de "left" o "right"  */
+<align-items: center;> /* Agrupa los elementos alrededor del centro */
+<align-items: start;> /* Agrupa los elementos desde el inicio */
+<align-items: end;> /* Agrupa los elementos desde el final */
+<align-items: flex-start;> /* Agrupa los elementos flex desde el incio */
+<align-items: flex-end;> /* Agrupa los elementos flex desde el final */
+<align-items: self-start;>
+<align-items: self-end;>
+
+/* Alineamiento de Linea Base */
+<align-items: baseline;>
+<align-items: first baseline;>
+<align-items: last baseline;> /* Alineamiento de desborde (solamente para alineamiento posicional) */
+<align-items: safe center;>
+<align-items: unsafe center;>
+
+/* Valores globales */
+<align-items: inherit;>
+<align-items: initial;>
+<align-items: unset;>
+    https://developer.mozilla.org/es/docs/Web/CSS/align-items
+
+
+<align-self>
+    alinea los elementos flexibles de la línea flexible actual, 
+    reemplazando el valor de align-items. Si el límite transversal de
+    alguno de los elementos está definido como auto,
+    el valor de align-self es ignorado.
+
+/* Valores clave */
+<align-self: auto;>
+<align-self: flex-start;>
+<align-self: flex-end;>
+<align-self: center;>
+<align-self: baseline;>
+<align-self: stretch;>
+
+/* Valores globales */
+<align-self: inherit;>
+<align-self: initial;>
+<align-self: unset;>
+
+https://developer.mozilla.org/es/docs/Web/CSS/align-self
+
+
+<flex-basis>
+    especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible. 
+    Ésta propiedad determina el tamaño de una caja de contenidos a no ser que se haya
+    especificado de otra forma usando box-sizing.
+
+https://developer.mozilla.org/es/docs/Web/CSS/flex-basis
+
+
+<flex-wrap>
+    especifica si los elementos "hijos" son obligados a permanecer en una misma línea 
+    o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida,
+    esta propiedad también te permite controlar la dirección en la cual serán 
+    apilados los elementos.
+
+https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap
+
+
+<order>
+    especifica el orden utilizado para disponer los elementos en su contenedor flexible. 
+    Los elementos estarán dispuestos en orden ascendente según el valor de order. 
+    Los elementos con el mismo valor de order se dispondrán en el orden en el
+    cual aparecen en el código fuente.
+
+https://developer.mozilla.org/es/docs/Web/CSS/order
+https://www.mclibre.org/consultar/htmlcss/css/css-flexbox.html

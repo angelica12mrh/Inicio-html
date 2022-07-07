@@ -1,0 +1,39 @@
+html{
+    background-color: rgb(230, 231, 231);
+}
+
+ol {
+background-color: rgb(228, 157, 181);
+}
+
+ol li {
+padding: 3px ;
+color: rgb(0, 0, 0);
+}		
+
+ol li:nth-child(n) { 
+background-color: #ffdbdb;
+}
+
+ol li:nth-child(2n+3){ 
+background-color: #b6c9eb;
+}
+
+
+
+ul {
+background-color: rgba(158, 158, 158, 0.308);
+}
+
+ul li {
+padding: 3px ;
+color: rgb(0, 0, 0);
+}		
+
+ul li:nth-child(n) { 
+background-color: #ffb64888;
+}
+
+ul li:nth-child(n+3){ 
+background-color: #b6c9eb;
+}

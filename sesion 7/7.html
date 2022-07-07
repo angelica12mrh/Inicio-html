@@ -1,0 +1,45 @@
+Posicion en html diferentes
+
+1.Estatico: posicion fija
+2.Relativo: depende de las condiciones (varia)
+
+se usa el elemento flotante (pueden ser imagenes o texto)
+
+A.posicion(flotante y como se muestra)
+B.colores
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">9
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 7</title>
+    <style>
+        span.capital{
+            float: left;
+            background-color: blue;
+            color: blueviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+        }
+        p.capital::first-letter{         (repite todo)
+            float: left;
+            background-color: blue;
+            color: blueviolet;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <p>
+       <span class="capital">A</span> ...    (hace mas grande la letra)
+    <br> <br> <br>
+    </p>
+    <p>
+        <img src="imagen..." >
+    </p>
+</body>
+</html>
+
